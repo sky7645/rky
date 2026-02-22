@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace | WholeMart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo-container">
+          <a href="index.html" class="logo-link">
+            <img
+              src="WhatsApp Image 2026-02-22 at 15.41.57.jpeg"
+              alt="WholeMart Logo"
+              class="logo"
+              width="50"
+              height="50"
+            />
+            <h1 class="brand-name">WholeMart</h1>
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="cart-button"
+          onclick="openCart()"
+          aria-label="Open shopping cart"
+        >
+          🛒 <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="marketplace">
+        <div class="container">
+          <h2>Marketplace</h2>
+          <div class="search-box">
+            <input
+              type="search"
+              id="search"
+              placeholder="Search products..."
+              onkeyup="searchProducts()"
+            />
+            <ul id="suggestions" class="suggestions-list" role="listbox"></ul>
+          </div>
+          <div class="products" id="product-list" role="grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="cart-modal"
+      class="cart-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="cart-content">
+        <h3>Your Cart</h3>
+        <button type="button" class="close-btn" onclick="closeCart()">✕</button>
+        <div id="cart-items"></div>
+        <div class="cart-actions">
+          <button type="button" onclick="checkout()" class="primary-btn">
+            Buy Now
+          </button>
+          <button type="button" onclick="closeCart()" class="secondary-btn">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 WholeMart. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

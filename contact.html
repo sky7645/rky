@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | WholeMart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo-container">
+          <a href="index.html" class="logo-link">
+            <img
+              src="WhatsApp Image 2026-02-22 at 15.41.57.jpeg"
+              alt="WholeMart Logo"
+              class="logo"
+              width="50"
+              height="50"
+            />
+            <h1 class="brand-name">WholeMart</h1>
+          </a>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="cart-button" onclick="openCart()">
+          🛒 <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>
+            Email:
+            <a href="mailto:support@wholemart.com">support@wholemart.com</a>
+          </p>
+          <p>Phone: <a href="tel:+919876543210">+91-9876543210</a></p>
+          <button type="button" class="secondary-btn" onclick="contactAlert()">
+            Send Message
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 WholeMart. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
